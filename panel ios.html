@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel PRX</title>
+<style>
+  body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  .header {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff0000;
+  }
+  .subheader {
+    font-size: 28px;
+    color: white;
+  }
+  .menu {
+    background-color: #d00000;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  .option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  .switch input {display:none;}
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  input:checked + .slider {
+    background-color: #ff0000;
+  }
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+</style>
+</head>
+<body>
+  <div class="header">PAINEL</div>
+  <div class="subheader">PRX</div>
+
+  <div class="menu">-MENU BYPASS-</div>
+
+  <div class="option">
+    BYPASS
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="option">
+    AIMBOT
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="option">
+    EASY HEAD
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="option">
+    AIM ASSIST
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="option">
+    NO RECOIL
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="option">
+    AIMLOCK
+    <label class="switch">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="menu">-MENU BYPASS-</div>
+
+</body>
+</html>
